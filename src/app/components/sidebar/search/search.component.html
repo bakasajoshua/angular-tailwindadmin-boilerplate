@@ -1,0 +1,16 @@
+<div class="bg-stone-200 mb-4 relative rounded flex items-center px-2 py-1.5 text-sm">
+    <ng-icon name="featherSearch" class="mr-2"></ng-icon>
+    <input
+        (focus)= "onFocus($event)"
+        type="text"
+        class="w-full bg-transparent focus:outline-none placeholder:text-stone-400" placeholder="Search..." />
+    <span class="p-1 text-xs flex gap-0.5 items-center shadow bg-stone-50 rounded absolute right-1.5 top-1/2 -translate-y-1/2">
+        @if(is_mac){
+            <ng-icon name="featherCommand"></ng-icon>
+        } @else {
+            Ctrl
+        }+ K
+    </span>
+</div>
+
+<app-command-menu />
