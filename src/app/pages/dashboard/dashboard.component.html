@@ -26,4 +26,27 @@
             [cperiod]="'Previous 365 days'"
         />
     </div>
+    <div class="col-span-8 overflow-hidden rounded border border-stone-300">
+        <div class="p-4">
+            <h3 class="flex items-center gap-1.5 font-medium">
+                <ng-icon name="featherUser"></ng-icon> Activity
+            </h3>
+        </div>
+
+        <div class="h-64 px-4">
+            <app-activity-graph />
+        </div>
+    </div>
+    
+    <div class="col-span-4 overflow-hidden rounded border border-stone-300">
+        <div class="p-4">
+            <h3 class="flex items-center gap-1.5 font-medium">
+                <ng-icon name="featherEye"></ng-icon> Usage
+            </h3>
+        </div>
+
+        <div class="h-64 px-4">
+            <app-usage-graph />
+        </div>
+    </div>
 </div>
