@@ -2,14 +2,14 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NgxEchartsDirective, provideEchartsCore } from 'ngx-echarts';
 import * as echarts from 'echarts/core';
-import { LineChart } from 'echarts/charts';
+import { LineChart, PieChart } from 'echarts/charts';
 import { GridComponent } from 'echarts/components';
 import { CanvasRenderer } from 'echarts/renderers';
 import { SidebarComponent } from "./components/sidebar/sidebar/sidebar.component";
 import { PageLayoutComponent } from "./components/page-layout/page-layout.component";
 
 
-echarts.use([LineChart, GridComponent, CanvasRenderer]);
+echarts.use([PieChart, LineChart, GridComponent, CanvasRenderer]);
 
 @Component({
   selector: 'app-root',
