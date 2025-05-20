@@ -19,12 +19,20 @@ export class ActivityGraphComponent {
     },
     yAxis: {
       type: 'value',
+      tooltip: {
+        show: true,
+      },
     },
     series: [
       {
         data: [820, 932, 901, 934, 1290, 1330, 1320],
         type: 'line',
-      },
+        smooth: true
+      },{
+        data: [800, 920, 801, 1034, 1390, 1030, 1220],
+        type: 'line',
+        smooth: true
+      }
     ],
   };
 }
