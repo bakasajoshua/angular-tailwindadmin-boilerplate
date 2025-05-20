@@ -1,0 +1,29 @@
+<div class="px-4 grid gap-3 grid-cols-12">
+    <div class="col-span-4 p-4 rounded border border-stone-300">
+        <app-stats-card
+            [ctitle]="'Total Revenue'"
+            [cvalue]="'$120,054.24'"
+            [cpillText]="'+2.75%'"
+            [ctrend]="'up'"
+            [cperiod]="'From Jan 1st - Jul 31st'"
+        />
+    </div>
+    <div class="col-span-4 p-4 rounded border border-stone-300">
+        <app-stats-card
+            [ctitle]="'Average Order'"
+            [cvalue]="'$27.97'"
+            [cpillText]="'1.01%'"
+            [ctrend]="'down'"
+            [cperiod]="'From Jan 1st - Jul 31st'"
+        />
+    </div>
+    <div class="col-span-4 p-4 rounded border border-stone-300">
+        <app-stats-card
+            [ctitle]="'Trailing Year'"
+            [cvalue]="'$278,054.24'"
+            [cpillText]="'60.75%'"
+            [ctrend]="'up'"
+            [cperiod]="'Previous 365 days'"
+        />
+    </div>
+</div>
