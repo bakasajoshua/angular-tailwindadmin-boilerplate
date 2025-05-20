@@ -1,0 +1,16 @@
+
+<div class="flex mb-8 items-start justify-between">
+    <div>
+        <h3 class="text-stone-500 mb-2 text-sm">{{ ctitle }}</h3>
+        <p class="text-3xl font-semibold">{{ cvalue }}</p>
+    </div>
+
+    <span
+        class="text-xs flex items-center gap-1 font-medium px-2 py-1 rounded-2xl
+        {{ ctrend == 'up' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'  }}">
+        <ng-icon name="featherTrending{{ ctrend === 'up' ? 'Up' : 'Down' }}"></ng-icon>
+        {{ cpillText }}
+    </span>
+</div>
+
+<p class="text-xs text-stone-500">{{ cperiod }}</p>
