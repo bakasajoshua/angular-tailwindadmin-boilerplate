@@ -1,4 +1,4 @@
-<button
+<a
     class="flex items-center justify-start gap-2 w-full rounded px-2 py-1.5 text-sm transition-[box-shadow,_background-color,_color]
     {{
         selected ? 'bg-white text-stone-950 shadow'
@@ -7,9 +7,10 @@
     <span class="{{
         selected ? 'text-violet-500'
         : 'text-stone-500'
-    }}">
+    }}"
+    routerLink="{{ route }}">
         <ng-icon [name]="icon"></ng-icon>
     </span>
     <span>{{ ititle }}</span>
-</button>
+</a>
     

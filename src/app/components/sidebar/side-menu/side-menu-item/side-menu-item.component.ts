@@ -1,11 +1,25 @@
 import { Component, Input } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { NgIcon, provideIcons } from '@ng-icons/core';
-import { featherHome, featherUsers, featherPaperclip, featherLink, featherDollarSign } from '@ng-icons/feather-icons';
+import {
+  featherHome,
+  featherUsers,
+  featherPaperclip,
+  featherLink,
+  featherDollarSign,
+  featherLogIn } from '@ng-icons/feather-icons';
 
 @Component({
   selector: 'app-side-menu-item',
-  imports: [NgIcon],
-  providers: [provideIcons({ featherHome, featherUsers, featherPaperclip, featherLink, featherDollarSign })],
+  imports: [NgIcon, RouterLink],
+  providers: [provideIcons({
+    featherHome,
+    featherUsers,
+    featherPaperclip,
+    featherLink,
+    featherDollarSign,
+    featherLogIn
+  })],
   templateUrl: './side-menu-item.component.html',
   styleUrl: './side-menu-item.component.css'
 })
