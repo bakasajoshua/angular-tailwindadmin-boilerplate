@@ -1,0 +1,31 @@
+<form [formGroup]="loginForm" (ngSubmit)="handleSubmit()">
+    <div class="mb-4">
+        <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+        <input
+            type="text"
+            id="username"
+            formControlName="username"
+            class="mt-1 p-2 w-full border rounded-lg border border-stone-300 text-sm"
+            placeholder="Enter your username" />	
+
+    </div>
+    <div class="mb-4">
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input
+            type="password"
+            id="password"
+            formControlName="password"
+            class="mt-1 p-2 w-full border rounded-lg border border-stone-300 text-sm"
+            placeholder="Enter your password" />
+    </div>
+    <div class="border-t border-stone-300 pt-2">
+        <div class="flex justify-center">
+            <button type="submit" [disabled]="!loginForm.valid" class="bg-blue-500 text-white px-2 py-2 rounded-lg text-sm w-full">Login</button>
+            
+        </div>
+        <a routerLink="#" class="flex justify-center text-sm pt-2 pb-2">Forgot Password</a>
+        <p class="flex justify-center text-sm pb-2">
+            Do not have an account? <a routerLink="/auth/signup" > Sign-Up </a> here
+        </p>
+    </div>
+</form>
